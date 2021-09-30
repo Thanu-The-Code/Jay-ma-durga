@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="second.css">
+  <link rel="stylesheet" href="g.js">
+  <title>Thaneesh Gvalvanshi</title>
+</head>
+
+<body>
+  <!-- <div id="container"></div> -->
+  <div class="ring">
+    <div class="audio">
+      <video width="400" height="200" controls autoplay>
+        <source src="photo/ring.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <div class="heading">
+    <h1 id="hea">दुर्गा नवमी की बहुत बहुत शुभकामनाये</h1>
+  </div>
+ <div class="aarti">
+ <video src="photo/vid.mp4" controls autoplay width="360px"></video>
+ </div>
+  <img src="photo/mataji.png" alt="">
+  <br>
+  <br>
+  <div class="typewriter">
+    <h1 id="text"> जय अम्बे गौरी मैया जय श्यामा गौरी
+      तुमको निशदिन ध्यावत
+      हरि ब्रह्मा शिवरी
+      ॐ जय अम्बे गौरी
+      जय अम्बे गौरी मैया जय श्यामा गौरी
+      तुमको निशदिन ध्यावत
+      हरि ब्रह्मा शिवरी
+      ॐ जय अम्बे गौरी    
+      मांग सिंदूर विराजत टीको मृगमद को
+      मैया टीको मृगमद को
+      उज्ज्वल से दो नैना उज्ज्वल से दो नैना
+      चंद्रवदन नीको
+      ॐ जय अम्बे गौरी      
+      कनक समान कलेवर रक्ताम्बर राजै
+      मैया रक्ताम्बर राजै
+      रक्तपुष्प गल माला रक्तपुष्प गल माला
+      कण्ठन पर साजै
+      ॐ जय अम्बे गौरी      
+      केहरि वाहन राजत खड्ग खप्परधारी
+      मैया खड्ग खप्परधारी
+      सुर नर मुनि जन सेवत सुर नर मुनि जन सेवत
+      तिनके दुखहारी
+      ॐ जय अम्बे गौरी      
+      कानन कुण्डल शोभित नासाग्रे मोती
+      मैया नासाग्रे मोती
+      कोटिक चन्द्र दिवाकर कोटिक चन्द्र दिवाकर
+      राजत सम ज्योति
+      ॐ जय अम्बे गौरी      
+      शुम्भ-निशुम्भ बिदारे, महिषासुर घाती
+      मैया महिषासुर घाती
+      धूम्र विलोचन नैना धूम्र विलोचन नैना
+      निशिदिन मदमाती
+      ॐ जय अम्बे गौरी
+     </h1>
+  </div>
+    <br>
+    <h2>
+      थनिश ग्वालवंशी की ओर से आपको और आपके पूरे परिवार को सबसे पहले दुर्गा नवमी की बहुत बहुत शुभकामनाएँ.....
+    </h2>
+    <h3>
+      माता रानी आप सभी को हमेशा खुश रखे और आपके सारे सपने पूरे करे,
+    </h3>
+    <br>
+    <h1>
+      ~Thanks a lot for,
+      visiting this page~
+    </h1>
+
+    <!-- This is Java Script part -->
+    <script>
+      var i = 0;
+      var tag = document.getElementById("text");
+      var html = document.getElementById("text").innerHTML;
+      var attr = tag.setAttribute("data", html);
+      var txt = tag.getAttribute("data");
+      var speed = 200;
+
+      function typeWriter() {
+        if (i <= txt.length) {
+          document.getElementById("text").innerHTML = txt.slice(0, i + 1);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+
+      }
+      typeWriter();
+    </script>
+</body>
+
+</html>
